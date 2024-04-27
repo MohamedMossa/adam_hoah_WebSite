@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adamandhoah App Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Start Global Rules */
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      /* The Variable */
+      :root {
+        --main-color: #2196f3;
+        --main-color-alt: #1787e0;
+        --hoah-color: #f390d3;
+        --main-transition: 0.3s;
+        --main-padding-top: 100px;
+        --main-padding-bottom: 100px;
+        --section-background: #ececec;
+      }
+      /* End Of Variable */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Cairo", "sans-serif";
+      }
+      a {
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      /* small */
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+
+      /* Medium.*/
+      @media (min-width: 992px) {
+        •container {
+          width: 970px;
+        }
+      }
+
+      /* Large */
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+      .main-title {
+        margin: 0 auto 80px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-size: 30px;
+        width: fit-content;
+        position: relative;
+        z-index: 1;
+        transform: var(--main-transition);
+      }
+      .main-title::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: var(--main-color);
+        position: absolute;
+        border-radius: 50%;
+        left: -20%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .main-title::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: var(--main-color);
+        position: absolute;
+        border-radius: 50%;
+        right: -20%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .main-title:hover:before {
+        z-index: -1;
+        animation: left-move 0.6s linear forwards;
+      }
+      .main-title:hover::after {
+        z-index: -2;
+        background-color: var(--hoah-color);
+        animation: right-move 0.5s linear forwards;
+      }
+
+      .main-title:hover {
+        color: white;
+        border: 2px solid white;
+        transition-delay: 0.5s;
+      }
+
+      /* End Global Rules */
+
+      /* Start Header */
+      .header {
+        background-color: white;
+        position: relative;
+        -webkit-box-shadow: 0 0 10px #ddd;
+        -moz-box-shadow: 0 0 10px #ddd;
+        box-shadow: 0 0 10px #ddd;
+      }
+
+      .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+      }
+
+      .header .logo {
+        color: var(--main-color);
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72px;
+      }
+
+      @media (max-width: 767px) {
+        .header .logo {
+          width: 100%;
+          height: 40px;
+        }
+      }
+      .header .Hoah {
+        color: var(--hoah-color);
+      }
+      .header .main-nav {
+        display: flex;
+      }
+      @media (max-width: 767px) {
+        .header .main-nav {
+          margin: auto;
+        }
+      }
+      .header .main-nav > li:hover .mega-menu {
+        opacity: 1;
+        z-index: 100;
+        top: calc(100% + 2px);
+        width: 100%;
+      }
+
+      .header .main-nav > li > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 72px;
+        position: relative;
+        color: black;
+        padding: 0 30px;
+        transition: var(--main-transition);
+        overflow: hidden;
+      }
+
+      @media (max-width: 767px) {
+        .header .main-nav > li > a {
+          padding: 10px;
+          font-size: 14px;
+          height: 40px;
+        }
+      }
+
+      .header .main-nav > li > a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--main-color);
+        top: 0;
+        left: -100%;
+        transition: var(--main-transition);
+      }
+
+      .header .main-nav > li > a:hover {
+        color: var(--main-color);
+        background-color: #fafafa;
+      }
+      .header .main-nav > li > a:hover::before {
+        left: 0;
+      }
+
+      .header .mega-menu {
+        position: absolute;
+        max-width: 100%;
+        left: 0;
+        padding: 30px;
+        background-color: white;
+        border-bottom: 3px solid var(--main-color);
+        z-index: -1;
+        display: flex;
+        gap: 40px;
+        top: calc(100% + 50px);
+        opacity: 0;
+        transition: top var(--main-transition), opacity var(--main-transition);
+      }
+      @media (max-width: 767px) {
+        .header .mega-menu {
+          flex-direction: column;
+          gap: 0;
+          padding: 5px;
+        }
+      }
+      .header .mega-menu .image img {
+        max-width: 100%;
+      }
+      @media (max-width: 991px) {
+        .header .mega-menu .image {
+          display: none;
+        }
+      }
+
+      .header .mega-menu .links {
+        min-width: 250px;
+        flex: 1;
+      }
+      .header .mega-menu .links li {
+        position: relative;
+      }
+
+      .header .mega-menu .links li:not(:last-child) {
+        border-bottom: 1px solid #e9e6e6;
+      }
+      @media (max-width: 767px) {
+        .header .mega-menu .links:first-of-type li:last-child {
+          border-bottom: 1px solid #e9e6e6;
+        }
+      }
+      .header .mega-menu .links li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0px;
+        height: 100%;
+        background-color: #fafafa;
+        z-index: -1;
+        transform: var(--main-transition);
+      }
+      .header .mega-menu .links li:hover::before {
+        width: 100%;
+      }
+      .header .mega-menu .links li a {
+        color: var(--main-color);
+        padding: 15px;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .header .mega-menu .links li a i {
+        margin-right: 10px;
+      }
+      #switch-lang {
+        color: rgb(159, 46, 225);
+      }
+
+      /* End Header */
+    </style>
+  </head>
+  <body>
+    <!-- start Header -->
+    <div class="header" id="header">
+      <div class="container">
+        <a href="https://adamandhoah.com/" class="logo"
+          >Adam <span class="Hoah">&Hoah</span></a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+
+      <p>
+        This Privacy Policy governs the manner in which our salon app collects,
+        uses, maintains, and discloses information collected from users (each, a
+        "User") of the salon app.
+      </p>
+
+      <h2>Personal Identification Information</h2>
+
+      <p>
+        We may collect personal identification information from Users in a
+        variety of ways, including, but not limited to, when Users visit our
+        app, register on the app, place an order, fill out a form, respond to a
+        survey, and in connection with other activities, services, features, or
+        resources we make available in our app. Users may be asked for, as
+        appropriate, name, email address, mailing address, phone number, credit
+        card information.
+      </p>
+
+      <h2>Non-personal Identification Information</h2>
+
+      <p>
+        We may collect non-personal identification information about Users
+        whenever they interact with our app. Non-personal identification
+        information may include the browser name, the type of computer, and
+        technical information about Users' means of connection to our app, such
+        as the operating system and the Internet service providers utilized and
+        other similar information.
+      </p>
+
+      <h2>How We Use Collected Information</h2>
+
+      <p>
+        Our salon app may collect and use Users' personal information for the
+        following purposes:
+      </p>
+
+      <ul>
+        <li>- To improve customer service</li>
+        <li>- To personalize user experience</li>
+        <li>- To improve our app</li>
+        <li>- To process payments</li>
+        <li>- To send periodic emails</li>
+      </ul>
+
+      <h2>Changes to This Privacy Policy</h2>
+
+      <p>
+        Our salon app has the discretion to update this privacy policy at any
+        time. When we do, we will post a notification on the main page of our
+        app. We encourage Users to frequently check this page for any changes to
+        stay informed about how we are helping to protect the personal
+        information we collect. You acknowledge and agree that it is your
+        responsibility to review this privacy policy periodically and become
+        aware of modifications.
+      </p>
+
+      <h2>Your Acceptance of These Terms</h2>
+
+      <p>
+        By using our salon app, you signify your acceptance of this policy. If
+        you do not agree to this policy, please do not use our app. Your
+        continued use of the app following the posting of changes to this policy
+        will be deemed your acceptance of those changes.
+      </p>
+
+      <h2>Contacting Us</h2>
+
+      <p>
+        If you have any questions about this Privacy Policy, the practices of
+        this app, or your dealings with this app, please contact us at:
+      </p>
+
+      <p>
+        Adam And Hoah App<br />
+        Address: makkah , jeddah, marwa distric<br />
+        Phone: <a href="#">+966 54 506 1385</a><br />
+        Email: <a href="#">support@adamandhoah.com</a>
+      </p>
+    </div>
+  </body>
+</html>
