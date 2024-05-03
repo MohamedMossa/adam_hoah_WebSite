@@ -594,6 +594,140 @@ ul {
 }
 /* End Features */
 
+/* Start Features Description  */
+.features-description .text ul {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-direction: row-reverse;
+}
+.row img {
+  width: 420px;
+  height: 500px;
+}
+.row .text {
+  flex: 1;
+  margin-right: auto;
+}
+.row-reverse {
+  flex-direction: row;
+}
+
+.row-reverse .text {
+  margin-left: 20px; /* Added space between the elements in the second row */
+  margin-right: 0;
+}
+.row-reverse img {
+  width: 490px;
+  height: 500px;
+}
+.features-description .text li {
+  color: #777;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .row,
+  .row-reverse {
+    flex-direction: column;
+  }
+  .row .text {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 16px;
+    margin-left: 2rem;
+  }
+
+  .row-reverse .text {
+    margin-left: 4rem;
+    margin-bottom: 20px;
+  }
+}
+/* End Features Description */
+/* Start Work Steps */
+.work-steps {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+.work-steps .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .work-steps .container {
+    flex-direction: column;
+  }
+}
+.work-steps .image {
+  max-width: 100%;
+  margin-right: 100px;
+}
+@media (max-width: 991px) {
+  .work-steps .image {
+    margin: 0 0 50px;
+  }
+}
+.work-steps .info .box {
+  background-color: #f6f5f5;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .work-steps .info .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.work-steps .info .box::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  background-color: #ededed;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.work-steps .info .box:hover::before {
+  width: 100%;
+  height: 100%;
+}
+.work-steps .info .box img {
+  width: 64px;
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .work-steps .info .box img {
+    margin: 0 0 30px;
+  }
+}
+.work-steps .info .box h3 {
+  margin: 0;
+  font-size: 22px;
+}
+.work-steps .info .box p {
+  color: #777;
+  line-height: 1.7;
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+/* End Work Steps */
+
 /* Start Animation */
 @keyframes up-and-down {
   0%,
