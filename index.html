@@ -1,170 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoseBerry</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RoseBerry</title>
-  <!-- Normalize -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <!-- font Awesome -->
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- my CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
-  <!-- bootstrap -->
+  <body>
+    <!-- start Header -->
+    <div class="header" id="header">
+      <div class="container">
+        <a href="#" class="logo">Adam <span class="Hoah">&Hoah</span></a>
+        <a href="#">
+          <div id="switch-lang">العربية</div>
+        </a>
+        <ul class="main-nav">
+          <li><a href="#articles">Category</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li>
+            <a href="#">Other Links</a>
+            <!-- Start MegaMenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="imgs/megamenu.png" alt="mega-menu" />
+              </div>
 
-</head>
-
-<body>
-  <!-- start Header -->
-  <div class="header" id="header">
-    <div class="container">
-      <a href="#" class="logo">Adam <span class="Hoah">&Hoah</span></a>
-      <a href="#">
-        <div id="switch-lang">العربية</div>
-      </a>
-      <ul class="main-nav">
-        <li><a href="#articles">Category</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#features">Features</a></li>
-        <li>
-          <a href="#">Other Links</a>
-          <!-- Start MegaMenu -->
-          <div class="mega-menu">
-            <div class="image">
-              <img src="imgs/megamenu.png" alt="mega-menu" />
+              <ul class="links">
+                <li>
+                  <a href="#"
+                    ><i class="far fa-comments fa-fw"></i>Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a href="#team"
+                    ><i class="far fa-user fa-fw"></i> Team Members</a
+                  >
+                </li>
+                <li>
+                  <a href="#services"
+                    ><i class="far fa-building fa-fw"></i> Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#our-skills"
+                    ><i class="far fa-check-circle fa-fw"></i> Our Skills</a
+                  >
+                </li>
+                <li>
+                  <a href="#work-steps"
+                    ><i class="far fa-clipboard fa-fw"></i> How It Works</a
+                  >
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="#events"
+                    ><i class="far fa-calendar-alt fa-fw"></i> Events</a
+                  >
+                </li>
+                <li>
+                  <a href="#pricing"
+                    ><i class="fas fa-server fa-fw"></i> Pricing Plans</a
+                  >
+                </li>
+                <li>
+                  <a href="#video"
+                    ><i class="far fa-play-circle fa-fw"></i> Top Videos</a
+                  >
+                </li>
+                <li>
+                  <a href="#stats"
+                    ><i class="far fa-chart-bar fa-fw"></i> Stats</a
+                  >
+                </li>
+                <li>
+                  <a href="#discount"
+                    ><i class="fas fa-percent fa-fw"></i> Request A Discount</a
+                  >
+                </li>
+              </ul>
             </div>
 
-            <ul class="links">
-              <li>
-                <a href="#"><i class="far fa-comments fa-fw"></i>Testimonials</a>
-              </li>
-              <li>
-                <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
-              </li>
-              <li>
-                <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
-              </li>
-              <li>
-                <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
-              </li>
-              <li>
-                <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
-              </li>
-            </ul>
-            <ul class="links">
-              <li>
-                <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
-              </li>
-              <li>
-                <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
-              </li>
-              <li>
-                <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
-              </li>
-              <li>
-                <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
-              </li>
-              <li>
-                <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
-              </li>
-            </ul>
+            <!-- End MegaMenu -->
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Start Landing -->
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1>Welcome, To Adam And hoah</h1>
+          <p>
+            Discover the ease of booking your next appointment with just a few
+            taps,and Thrive in a world of luxury convenience with our app
+          </p>
+        </div>
+        <div class="image">
+          <img src="imgs/landing-image.png" alt="landing image" />
+        </div>
+      </div>
+      <a href="#articles" class="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Category -->
+    <div class="articles" id="articles">
+      <h2 class="main-title">Category</h2>
+      <div class="container">
+        <div class="box">
+          <img src="imgs/salon _category/wemen-2.jpeg" alt="" />
+          <div class="content">
+            <h3>Female Salon</h3>
+            <p>
+              Make your salon a destination for luxury with our salon booking app.leverage our platform to enhance your customers' experience and attract more clients. Let them indulge in beauty and elegance like never before.
+            </p>
           </div>
-
-          <!-- End MegaMenu -->
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Start Landing -->
-  <div class="landing">
-    <div class="container">
-      <div class="text">
-        <h1>Welcome, To Adam And hoah</h1>
-        <p>
-          Discover the ease of booking your next appointment with just a few
-          taps,and Thrive in a world of luxury convenience with our app
-        </p>
-      </div>
-      <div class="image">
-        <img src="imgs/landing-image.png" alt="landing image" />
-      </div>
-    </div>
-    <a href="#articles" class="go-down">
-      <i class="fas fa-angle-double-down fa-2x"></i>
-    </a>
-  </div>
-  <!-- End Landing -->
-  <!-- Start Category -->
-  <div class="articles" id="articles">
-    <h2 class="main-title">Category</h2>
-    <div class="container">
-      <div class="box">
-        <img src="imgs/salon _category/wemen-2.jpeg" alt="" />
-        <div class="content">
-          <h3>Female Salon</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <div class="info">
+            <a href="">Read More</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
         </div>
-        <div class="info">
-          <a href="">Read More</a>
-          <i class="fas fa-long-arrow-alt-right"></i>
+        <div class="box">
+          <img src="imgs/salon _category/men_salon.jpg" alt="" />
+          <div class="content">
+            <h3>Men Salon</h3>
+            <p>
+              Provide an exceptional experience for your customers at your men's salon. With our appointment booking platform, you can easily and efficiently offer the best services to your clients.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">Read More</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
         </div>
-      </div>
-      <div class="box">
-        <img src="imgs/salon _category/men_salon.jpg" alt="" />
-        <div class="content">
-          <h3>Men Salon</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        <div class="box">
+          <img src="imgs/salon _category/spa.png" alt="" />
+          <div class="content">
+            <h3>Spa Center</h3>
+            <p>
+              Attract customers to your spa center through our salon booking app. Easy to use and effective in marketing by offering your services provide. Make the experience easy and convenient for your customers and make your center a favorite destination 
+            </p>
+          </div>
+          <div class="info">
+            <a href="">Read More</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
         </div>
-        <div class="info">
-          <a href="">Read More</a>
-          <i class="fas fa-long-arrow-alt-right"></i>
+        <div class="box">
+          <img src="imgs/salon _category/massage.jpeg" alt="" />
+          <div class="content">
+            <h3>Massage Center</h3>
+            <p>
+              Benefit from our salon managment app to enhance your center. By facilitating the booking process and providing relaxing and therapeutic your services
+            </p>
+          </div>
+          <div class="info">
+            <a href="">Read More</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
         </div>
-      </div>
-      <div class="box">
-        <img src="imgs/salon _category/spa.png" alt="" />
-        <div class="content">
-          <h3>Spa Center</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        <div class="box">
+          <img src="imgs/salon _category/buity_femal.jpeg" alt="" />
+          <div class="content">
+            <h3>Beauty Clinics</h3>
+            <p>
+              Let our  app help you promote your beauty clinic. With our efficient platform, you can market the luxurious beauty services you offer and mange your emplyee ,. Easy to use and designed to mange your business.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">Read More</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
         </div>
-        <div class="info">
-          <a href="">Read More</a>
-          <i class="fas fa-long-arrow-alt-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <img src="imgs/salon _category/massage.jpeg" alt="" />
-        <div class="content">
-          <h3>Massage Center</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="">Read More</a>
-          <i class="fas fa-long-arrow-alt-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <img src="imgs/salon _category/buity_femal.jpeg" alt="" />
-        <div class="content">
-          <h3>Beauty Clinics</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="">Read More</a>
-          <i class="fas fa-long-arrow-alt-right"></i>
-        </div>
-      </div>
-      <!-- <div class="box">
+        <!-- <div class="box">
           <img src="imgs/cat-06.jpg" alt="" />
           <div class="content">
             <h3>Test Title</h3>
@@ -196,175 +234,427 @@
             <a href="">Read More</a>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div> -->
-    </div>
-  </div>
-  </div>
-  <div class="spikes"></div>
-  <!-- End Category -->
-  <!-- Start Gallery -->
-  <div class="gallery" id="gallery">
-    <h2 class="main-title">Gallery</h2>
-    <div class="container">
-      <div class="box">
-        <div class="image">
-          <img src="./imgs/salon _category/place.png" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./imgs/salon _category/place.png" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./imgs/salon _category/place.png" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./imgs/salon _category/place.png" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./imgs/salon _category/place.png" alt="">
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./imgs/salon _category/place.png" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Gallery -->
-  <!-- Start Features -->
-  <div class="features" id="features">
-    <h2 class="main-title">Features</h2>
-    <div class="container">
-      <div class="box quality">
-        <div class="img-holder"><img src="imgs/products.png" alt=""></div>
-        <h2>Shoping</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
-        <a href="#">More</a>
-      </div>
-      <div class="box time">
-        <div class="img-holder"><img src="imgs/Booking.png" alt=""></div>
-        <h2>Booking</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
-        <a href="#">More</a>
-      </div>
-      <div class="box passion">
-        <div class="img-holder"><img src="imgs/dashboard.jpeg" alt=""></div>
-        <h2> Salon Dashboard</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
-        <a href="#">More</a>
       </div>
     </div>
 
-  </div>
-  <!-- End Features -->
-  <!-- Start Features Discription -->
-  <div class="features-description">
-    <div class="container">
-      <div class="row">
-        <img src="./imgs/shopping.png" alt="Placeholder Image" width="200">
-        <div class="text">
-          <h1>Shopping </h1>
-          <ul>
-            <li>Wide range of skin care, makeup and hair care products.</li>
-            <li>Salon foundation products</li>
-            <li>Easy and secure payment methods</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row row-reverse">
-        <img src="./imgs/booking-Screen.png" alt="Placeholder Image">
-        <div class="text">
-          <h1>Online Booking System</h1>
-          <ul>
-            <li>Allow customers to book appointments online through th app and choose Between employee</li>
-            <li>Appointment Reminders</li>
-            <li>track your daily, weekly, and monthly bookings through one screen</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <img src="./imgs/staff.png" alt="Placeholder Image" style="width: 500px;">
-        <div class="text">
-          <h2>Staff Management</h2>
-          <ul>
-            <li>Maintain detailed profiles for each staff member, including contact information, role, skills, and
-              availability..</li>
-            <li>Assigning services to employees</li>
-            <li>Performance monitoring</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row row-reverse">
-        <img src="./imgs/marketing.png" alt="Placeholder Image">
-        <div class="text">
-          <h1>Marketing Management</h1>
-          <ul>
-            <li>Allow customers to easy reach Your Location</li>
-            <li>inegrated Social medaia </li>
-            <li>Add Offers And pormotion SMS for the Clients</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Start Features Discription -->
-
-  <!-- Start How it Work -->
-  <!-- Start Work Steps -->
-  <div class="work-steps" id="work-steps">
-    <h2 class="main-title">How It Works ?</h2>
-    <div class="container">
-      <img src="./imgs/how.svg" alt="" class="image" />
-      <div class="info">
+    <div class="spikes"></div>
+    <!-- End Category -->
+    <!-- Start Gallery -->
+    <!-- <div class="gallery" id="gallery">
+      <h2 class="main-title">Gallery</h2>
+      <div class="container">
         <div class="box">
-          <img src="imgs/download-icon.png" alt="" />
-          <div class="text">
-            <h3>Download The App</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-              recusandae debitis vel
-            </p>
+          <div class="image">
+            <img src="./imgs/salon _category/place.png" alt="" />
           </div>
         </div>
         <div class="box">
-          <img src="imgs/signup.png" alt="" />
-          <div class="text">
-            <h3>Sign Up</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-              recusandae debitis vel
-            </p>
+          <div class="image">
+            <img src="./imgs/salon _category/place.png" alt="" />
           </div>
         </div>
         <div class="box">
-          <img src="imgs/start-work.png" alt="" />
+          <div class="image">
+            <img src="./imgs/salon _category/place.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./imgs/salon _category/place.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./imgs/salon _category/place.png" alt="" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./imgs/salon _category/place.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Gallery -->
+    <!-- Start Features -->
+    <div class="features" id="features">
+      <h2 class="main-title">Features</h2>
+      <div class="container">
+        <div class="box quality">
+          <div class="img-holder"><img src="imgs/products.png" alt="" /></div>
+          <h2>Shoping</h2>
+          <p>
+            Discover all cosmatic produts and all you need to founded your salon
+
+          </p>
+          <a href="#">More</a>
+        </div>
+        <div class="box time">
+          <div class="img-holder"><img src="imgs/Booking.png" alt="" /></div>
+          <h2>Booking</h2>
+          <p>
+            Streamline your appointments with our intuitive booking app. Schedule, manage, and optimize your bookings .
+          </p>
+          <a href="#">More</a>
+        </div>
+        <div class="box passion">
+          <div class="img-holder"><img src="imgs/dashboard.jpeg" alt="" /></div>
+          <h2>Salon Dashboard</h2>
+          <p>
+            Manage your salon efficiently with our dashboard. Track appointments, monitor performance, and enhance client satisfaction seamlessly.
+          </p>
+          <a href="#">More</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Features Discription -->
+    <div class="features-description">
+      <div class="container">
+        <div class="row">
+          <img src="./imgs/shopping.png" alt="Placeholder Image" width="200">
           <div class="text">
-            <h3>Our Team Will Support You</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum
-              recusandae debitis vel
-            </p>
+            <h1>Shopping</h1>
+            <ul>
+              <li>Wide range of skin care, makeup and hair care products.</li>
+              <li>Salon foundation products</li>
+              <li>Easy and secure payment methods</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-reverse">
+          <img src="./imgs/booking-Screen.png" alt="Placeholder Image">
+          <div class="text">
+            <h1>Online Booking System</h1>
+            <ul>
+              <li>
+                Allow customers to book appointments online through th app and
+                choose Between employee
+              </li>
+              <li>Appointment Reminders</li>
+              <li>
+                track your daily, weekly, and monthly bookings through one
+                screen
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <img
+            src="./imgs/staff.png"
+            alt="Placeholder Image"
+            style="width: 500px"
+          />
+          <div class="text">
+            <h2>Staff Management</h2>
+            <ul>
+              <li>
+                Maintain detailed profiles for each staff member, including
+                contact information, role, skills, and availability..
+              </li>
+              <li>Assigning services to employees</li>
+              <li>Performance monitoring</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-reverse">
+          <img src="./imgs/marketing.png" alt="Placeholder Image" />
+          <div class="text">
+            <h1>Marketing Management</h1>
+            <ul>
+              <li>Allow customers to easy reach Your Location</li>
+              <li>inegrated Social medaia</li>
+              <li>Add Offers And pormotion SMS for the Clients</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Start Features Discription -->
+
+    <!-- Start How it Work -->
+    <!-- Start Work Steps -->
+    <div class="work-steps" id="work-steps">
+      <h2 class="main-title">How It Works ?</h2>
+      <div class="container">
+        <img src="./imgs/how.svg" alt="" class="image" />
+        <div class="info">
+          <div class="box">
+            <img src="imgs/download-icon.png" alt="" />
+            <div class="text">
+              <h3>Download The App</h3>
+              <p>
+                Get started by downloading our app from the <br/> <span><a href="https://apps.apple.com/us/app/adam-hoah/id6450120463?platform=iphone">App Stor</a></span> or <span><a href="https://play.google.com/store/apps/details?id=com.adamandhoah.adamandhoah&pcampaignid=web_share
+                  ">Google Play</a></span> . Access our services anytime, anywhere
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/signup.png" alt="" />
+            <div class="text">
+              <h3>Sign Up</h3>
+              <p>
+                Join our community by signing up for an account. 
+                It's quick, easy, and free. Simply provide your basic information to unlock exclusive features and personalized experiences.
+
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/start-work.png" alt="" />
+            <div class="text">
+              <h3>Our Team Will Support You</h3>
+              <p>
+                Rest assured, our dedicated team is here to support you every step of the way. Whether you have questions, 
+                need assistance, or seek guidance,we're committed to providing you with the highest level of support and ensuring your satisfaction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Work Steps -->
+    <!-- End How it Work -->
+
+    <!-- Start Skills -->
+    <div class="our-skills" id="our-skills">
+      <h2 class="main-title">App Skills</h2>
+      <div class="container">
+        <img src="imgs/events.png" alt="" />
+        <div class="skills">
+          <div class="skill">
+            <h3>Shopping <span>90%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="90%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Booking <span>95%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="95%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Services <span>87%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="87%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Technical Support <span>85%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="85%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
+
+    <!-- Start Stats -->
+    <div class="stats" id="stats">
+      <h2>Our Awesome Stats</h2>
+      <div class="container">
+        <div class="box">
+          <i class="far fa-user fa-2x fa-fw"></i>
+          <span class="number" data-goal="14000">0</span>
+          <span class="text">Clients</span>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-wand-magic fa-2x fa-fw"></i>      
+              <span class="number" data-goal="1657000">0</span>
+          <span class="text">Booking</span>
+        </div>
+        <div class="box">
+         <img src="imgs/hair-salon .svg" alt="">
+          <span class="number" data-goal="2880">0</span>
+          <span class="text">Salons</span>
+        </div>
+        <div class="box">
+          <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
+          <span class="number" data-goal="100">0</span>
+          <span class="text">Services</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Stats -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials" id="testimonials">
+      <h2 class="main-title">Commnets</h2>
+      <div class="container">
+        <div class="box">
+          <img src="imgs/avatar-01.png" alt="" />
+          <h3>Mohamed Alaharbi</h3>
+          <span class="title">Full Stack Developer</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Love how easy it is to browse services and book appointments on this app. Saves me so much time!
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-02.png" alt="" />
+          <h3>Sultan Alqrashi</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            The app's interface is sleek and intuitive. Makes scheduling appointments a breeze!
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-03.png" alt="" />
+          <h3>Shady Nabil</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Being able to see real-time availability and book appointments instantly is a game-changer. No more phone calls or waiting on hold
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-04.png" alt="" />
+          <h3>Sauod Alatibi</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+          </div>
+          <p>
+            Applying filters to find the perfect salon and service is such a helpful feature. Makes it easy to discover new places!
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-05.png" alt="" />
+          <h3>Sherief Alzahrani</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Being able to reschedule or cancel appointments on the go has been a awsom. So flexible and convenient
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-06.png" alt="" />
+          <h3>Zain Alghamdi</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            The app's push notifications keep me informed about special promotions and discounts. I never miss out on a deal
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+
+<!-- Start Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="box">
+      <h3>Adam & Hoah</h3>
+      <ul class="social">
+        <li>
+          <a href="#" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text">
+        Stay connected with us! Follow our social media channels for the latest updates, exclusive offers,</p>
+    </div>
+    <div class="box">
+      <ul class="links">
+        <!-- <li><a href="#">Important Link 1</a></li>
+        <li><a href="#">Important Link 2</a></li>
+        <li><a href="#">Important Link 3</a></li>
+        <li><a href="#">Important Link 4</a></li>
+        <li><a href="#">Important Link 5</a></li> -->
+      </ul>
+    </div>
+    <div class="box">
+      <div class="line">
+        <i class="fas fa-map-marker-alt fa-fw"></i>
+        <div class="info">KSA, Jeddah, Marwa district,Aamer bin rabi3a Str</div>
+      </div>
+      <div class="line">
+        <i class="far fa-clock fa-fw"></i>
+        <div class="info">Business Hours: From 9:00 To 17:00 pm</div>
+      </div>
+      <div class="line">
+        <i class="fas fa-phone-volume fa-fw"></i>
+        <div class="info">
+          <span>+966 54 088 7649</span>
+          <span>+966 12 677 501</span>
+        </div>
+      </div>
+    </div>
+    <div class="box footer-gallery">
+      <img src="imgs/salon _category/wemen-2.jpeg" alt="" />
+      <img src="imgs/salon _category/men_salon.jpg" alt="" />
+      <img src="imgs/salon _category/spa.png" alt="" />
+      <img src="imgs/salon _category/massage.jpeg" alt="" />
+      <img src="imgs/salon _category/buity_femal.jpeg" alt="" />
+      <img src="imgs/salon _category/place.png" alt="" />
+     
+    </div>
+  
   </div>
-  <!-- End Work Steps -->
-  <!-- End How it Work -->
-
-
-  <script src="./main.js"></script>
-
-</body>
-
+  <div class="download-buttons">
+    <a href="https://apps.apple.com/us/app/adam-hoah/id6450120463?platform=iphone" class="button app-store">
+      <i class="fab fa-apple"></i>App Store
+    </a>
+    <a href="
+    https://play.google.com/store/apps/details?id=com.adamandhoah.adamandhoah&pcampaignid=web_share
+    " class="button google-play">
+      <i class="fab fa-google-play"></i>Google Play
+    </a>
+  </div>
+  <a href="https://modernzonetech.com"><h6 class="copyright">© Made by Modern Zone</h6></a>
+</div>
+<!-- End Footer -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
+
+

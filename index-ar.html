@@ -1,57 +1,637 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoseBerry</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/style-ar.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RoseBerry</title>
-  <!-- Normalize -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <!-- font Awesome -->
-  <link rel="stylesheet" href="css/all.min.css" />
-  <!-- my CSS --> 
-  <link rel="stylesheet" href="css/style-ar.css" />
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <!-- بداية الهيدر -->
+    <div class="header" id="header">
+      <div class="container">
+        <a href="#" class="logo">آدم <span class="Hoah">&حواء</span></a>
+        <a href="#">
+          <div id="switch-lang">العربية</div>
+        </a>
+        <ul class="main-nav">
+          <li><a href="#articles">التصنيفات</a></li>
+          <li><a href="#gallery">الاسعار</a></li>
+          <li><a href="#features">الميزات</a></li>
+          <li>
+            <a href="#">روابط أخرى</a>
+            <!-- بداية القائمة الضخمة -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="imgs/megamenu.png" alt="القائمة الضخمة" />
+              </div>
 
-<body>
-  <!-- start Header -->
-  <div class="header" id="header">
-    <div class="container">
-      <a href="#" class="logo">آدم <span class="Hoah">&حواء</span></a>
-     <a href="#"> <div id="switch-lang">English</div></a>
-      <ul class="main-nav">
-        <li><a href="#articles">المقالات</a></li>
-        <li><a href="#gallery">المعرض</a></li>
-        <li><a href="#features">المميزات</a></li>
-        <li><a href="#">روابط أخرى</a></li>
-      </ul>
-      
-    </div>
-  </div>
-  <!-- Start Landing -->
-  <div class="landing">
-    <div class="container">
-      <div class="text">
-        <h1>مرحبًا، بكم في آدم وحواء</h1>
-        <p>
-          اكتشف سهولة حجز موعدك التالي ببضع نقرات فقط، وازدهر في عالم الرفاهية والراحة مع تطبيقنا
-        </p>
+              <ul class="links">
+                <li>
+                  <a href="#"><i class="far fa-comments fa-fw"></i>الشهادات</a>
+                </li>
+                <li>
+                  <a href="#team"
+                    ><i class="far fa-user fa-fw"></i>أعضاء الفريق</a
+                  >
+                </li>
+                <li>
+                  <a href="#services"
+                    ><i class="far fa-building fa-fw"></i>الخدمات</a
+                  >
+                </li>
+                <li>
+                  <a href="#our-skills"
+                    ><i class="far fa-check-circle fa-fw"></i>مهاراتنا</a
+                  >
+                </li>
+                <li>
+                  <a href="#work-steps"
+                    ><i class="far fa-clipboard fa-fw"></i>كيف يعمل الأمر</a
+                  >
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="#events"
+                    ><i class="far fa-calendar-alt fa-fw"></i>الفعاليات</a
+                  >
+                </li>
+                <li>
+                  <a href="#pricing"
+                    ><i class="fas fa-server fa-fw"></i>خطط التسعير</a
+                  >
+                </li>
+                <li>
+                  <a href="#video"
+                    ><i class="far fa-play-circle fa-fw"></i>أفضل الفيديوهات</a
+                  >
+                </li>
+                <li>
+                  <a href="#stats"
+                    ><i class="far fa-chart-bar fa-fw"></i>الإحصاءات</a
+                  >
+                </li>
+                <li>
+                  <a href="#discount"
+                    ><i class="fas fa-percent fa-fw"></i>طلب تخفيض</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- نهاية القائمة الضخمة -->
+          </li>
+        </ul>
       </div>
-      <div class="image">
-        <img src="imgs/landing-image.png" alt="صورة الواجهة" />
+    </div>
+    <!-- بداية المنطقة الرئيسية -->
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1>مرحبًا، بكم في آدم وحواء</h1>
+          <p>
+            اكتشف سهولة حجز موعدك التالي ببضع نقرات، وانعم بالرفاهية والراحة في
+            عالمنا مع تطبيقنا
+          </p>
+        </div>
+        <div class="image">
+          <img src="imgs/landing-image.png" alt="صورة منطقة رئيسية" />
+        </div>
+      </div>
+      <a href="#articles" class="go-down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+    <!-- نهاية المنطقة الرئيسية -->
+    <!-- بداية التصنيفات -->
+    <div class="articles" id="articles">
+      <h2 class="main-title">التصنيفات</h2>
+      <div class="container">
+        <div class="box">
+          <img src="imgs/salon _category/wemen-2.jpeg" alt="" />
+          <div class="content">
+            <h3>صالون نسائي</h3>
+            <p>
+              اجعل صالونك مكانًا للرفاهية مع تطبيق حجز الصالون الخاص بنا. استفد
+              من منصتنا لتعزيز تجربة عملائك وجذب المزيد من العملاء. دعهم
+              يستمتعون بالجمال والأناقة كما لم يحدث من قبل.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">قراءة المزيد</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/salon _category/men_salon.jpg" alt="" />
+          <div class="content">
+            <h3>صالون رجالي</h3>
+            <p>
+              قدم تجربة استثنائية لعملائك في صالون الرجال الخاص بك. مع منصة حجز
+              المواعيد الخاصة بنا، يمكنك بسهولة وكفاءة تقديم أفضل الخدمات
+              لعملائك.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">قراءة المزيد</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/salon _category/spa.png" alt="" />
+          <div class="content">
+            <h3>مركز سبا</h3>
+            <p>
+              جذب العملاء إلى مركز السبا الخاص بك من خلال تطبيق حجز الصالون
+              لدينا. سهل الاستخدام وفعال في التسويق من خلال تقديم الخدمات التي
+              تقدمها. اجعل التجربة سهلة ومريحة لعملائك واجعل مركزك وجهة مفضلة.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">قراءة المزيد</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/salon _category/massage.jpeg" alt="" />
+          <div class="content">
+            <h3>مركز تدليك</h3>
+            <p>
+              استفد من تطبيق إدارة الصالون الخاص بنا لتعزيز مركزك. من خلال تسهيل
+              عملية الحجز وتقديم خدماتك المريحة والعلاجية.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">قراءة المزيد</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/salon _category/buity_femal.jpeg" alt="" />
+          <div class="content">
+            <h3>عيادات تجميل</h3>
+            <p>
+              دع تطبيقنا يساعدك في الترويج لعيادتك التجميلية. مع منصتنا الفعالة،
+              يمكنك التسويق للخدمات الجمالية الفاخرة التي تقدمها وإدارة موظفيك.
+              سهل الاستخدام ومصمم لإدارة عملك.
+            </p>
+          </div>
+          <div class="info">
+            <a href="">قراءة المزيد</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </div>
+        </div>
+        <!-- <div class="box">
+      <img src="imgs/cat-06.jpg" alt="" />
+      <div class="content">
+        <h3>Test Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+      </div>
+      <div class="info">
+        <a href="">قراءة المزيد</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
       </div>
     </div>
-    <a href="#articles" class="go-down">
-      <i class="fas fa-angle-double-down fa-2x"></i>
-    </a>
-  </div>
-  <!-- End Landing -->
+    <div class="box">
+      <img src="imgs/cat-07.jpg" alt="" />
+      <div class="content">
+        <h3>Test Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+      </div>
+      <div class="info">
+        <a href="">قراءة المزيد</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </div>
+    </div>
+    <div class="box">
+      <img src="imgs/cat-08.jpg" alt="" />
+      <div class="content">
+        <h3>Test Title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+      </div>
+      <div class="info">
+        <a href="">قراءة المزيد</a>
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </div>
+    </div> -->
+      </div>
+    </div>
+    <div class="spikes"></div>
+    <!-- نهاية الفئات -->
+    <!-- بداية الميزات -->
+    <div class="features" id="features">
+      <h2 class="main-title">الميزات</h2>
+      <div class="container">
+        <div class="box quality">
+          <div class="img-holder"><img src="imgs/products.png" alt="" /></div>
+          <h2>التسوق</h2>
+          <p>اكتشف جميع المنتجات التجميلية وكل ما تحتاجه لتأسيس صالونك.</p>
+          <a href="#">المزيد</a>
+        </div>
+        <div class="box time">
+          <div class="img-holder"><img src="imgs/Booking.png" alt="" /></div>
+          <h2>الحجوزات</h2>
+          <p>
+            قم بتبسيط مواعيدك مع تطبيق الحجز الذكي لدينا. قم بجدولة وإدارة
+            وتحسين حجوزاتك.
+          </p>
+          <a href="#">المزيد</a>
+        </div>
+        <div class="box passion">
+          <div class="img-holder"><img src="imgs/dashboard.jpeg" alt="" /></div>
+          <h2>لوحة تحكم</h2>
+          <p>
+            إدارة صالونك بكفاءة من خلال لوحة التحكم لدينا. تتبع المواعيد، وراقب
+            الأداء، وزيادة رضا العملاء بسهولة.
+          </p>
+          <a href="#">المزيد</a>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية الميزات -->
 
-  <script src="./main.js"></script>
-</body>
+    <!-- بداية وصف الميزات -->
+    <div class="features-description">
+      <div class="container">
+        <div class="row">
+          <img src="./imgs/shopping.png" alt="صورة بديلة" width="200" />
+          <div class="text">
+            <h1>التسوق</h1>
+            <ul>
+              <li>
+                مجموعة واسعة من منتجات العناية بالبشرة والمكياج والعناية بالشعر.
+              </li>
+              <li>منتجات تأسيس الصالون</li>
+              <li>طرق دفع سهلة وآمنة</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-reverse">
+          <img src="./imgs/booking-Screen.png" alt="صورة بديلة" />
+          <div class="text">
+            <h1>نظام الحجز عبر الإنترنت</h1>
+            <ul>
+              <li>
+                السماح للعملاء بحجز مواعيدهم عبر الإنترنت من خلال التطبيق
+                واختيار الموظفين
+              </li>
+              <li>تذكير بالمواعيد</li>
+              <li>
+                تتبع حجوزاتك اليومية والأسبوعية والشهرية من خلال شاشة واحدة
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./imgs/staff.png" alt="صورة بديلة" style="width: 500px" />
+          <div class="text">
+            <h2>إدارة الموظفين</h2>
+            <ul>
+              <li>
+                الحفاظ على ملفات تفصيلية لكل عضو في الفريق، بما في ذلك معلومات
+                الاتصال، والدور، والمهارات، والتوفر.
+              </li>
+              <li>تعيين الخدمات للموظفين</li>
+              <li>مراقبة الأداء</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-reverse">
+          <img src="./imgs/marketing.png" alt="صورة بديلة" />
+          <div class="text">
+            <h1>إدارة التسويق</h1>
+            <ul>
+              <li>السماح للعملاء بالوصول بسهولة إلى موقعك</li>
+              <li>وسائل التواصل الاجتماعي المتكاملة</li>
+              <li>إضافة عروض ورسائل ترويجية SMS للعملاء</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية وصف الميزات -->
 
+    <!-- بداية كيف يعمل -->
+    <!-- بداية خطوات العمل -->
+    <div class="work-steps" id="work-steps">
+      <h2 class="main-title">كيف يعمل الأمر؟</h2>
+      <div class="container">
+        <img src="./imgs/how.svg" alt="" class="image" />
+        <div class="info">
+          <div class="box">
+            <img src="imgs/download-icon.png" alt="" />
+            <div class="text">
+              <h3>قم بتنزيل التطبيق</h3>
+              <p>
+                ابدأ بتنزيل تطبيقنا من <br />
+                <span
+                  ><a
+                    href="https://apps.apple.com/us/app/adam-hoah/id6450120463?platform=iphone"
+                    >App Store</a
+                  ></span
+                >
+                أو
+                <span
+                  ><a
+                    href="https://play.google.com/store/apps/details?id=com.adamandhoah.adamandhoah&pcampaignid=web_share
+              "
+                    >Google Play</a
+                  ></span
+                >. قم بالوصول إلى خدماتنا في أي وقت وفي أي مكان
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/signup.png" alt="" />
+            <div class="text">
+              <h3>سجل الدخول</h3>
+              <p>
+                انضم إلى مجتمعنا عن طريق التسجيل في حساب. من السهل والسريع
+                والمجاني. ما عليك سوى تقديم معلوماتك الأساسية لفتح ميزات حصرية
+                وتجارب شخصية.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/start-work.png" alt="" />
+            <div class="text">
+              <h3>فريقنا سيدعمك</h3>
+              <p>
+                كن واثقًا، ففريقنا المتفاني هنا لدعمك في كل خطوة. سواء كان لديك
+                أسئلة، تحتاج إلى مساعدة، أو تبحث عن إرشاد، نحن ملتزمون بتقديم
+                أعلى مستوى من الدعم وضمان رضاك.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية خطوات العمل -->
+    <!-- نهاية كيف يعمل -->
+    <!-- بداية المهارات -->
+    <div class="our-skills" id="our-skills">
+      <h2 class="main-title">الاداء</h2>
+      <div class="container">
+        <img src="imgs/events.png" alt="" />
+        <div class="skills">
+          <div class="skill">
+            <h3>التسوق <span>90%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="90%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>الحجز <span>95%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="95%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>الخدمات <span>87%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="87%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>الدعم الفني <span>85%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="85%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية المهارات -->
+
+    <!-- بداية الإحصائيات -->
+    <div class="stats" id="stats">
+      <h2>إحصائياتنا الرائعة</h2>
+      <div class="container">
+        <div class="box">
+          <i class="far fa-user fa-2x fa-fw"></i>
+          <span class="number" data-goal="14000">0</span>
+          <span class="text">العملاء</span>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-wand-magic fa-2x fa-fw"></i>
+          <span class="number" data-goal="1657000">0</span>
+          <span class="text">الحجوزات</span>
+        </div>
+        <div class="box">
+          <img src="imgs/hair-salon .svg" alt="" />
+          <span class="number" data-goal="2880">0</span>
+          <span class="text">الصالونات</span>
+        </div>
+        <div class="box">
+          <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
+          <span class="number" data-goal="100">0</span>
+          <span class="text">الخدمات</span>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية الإحصائيات -->
+    <!-- بداية التوصيات -->
+    <div class="testimonials" id="testimonials">
+      <h2 class="main-title">التعليقات</h2>
+      <div class="container">
+        <div class="box">
+          <img src="imgs/avatar-01.png" alt="" />
+          <h3>محمد الأحرشي</h3>
+          <span class="title">مطور متكامل</span>
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            أحب كيفية سهولة تصفح الخدمات وحجز المواعيد على هذا التطبيق. يوفر لي
+            الكثير من الوقت!
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-02.png" alt="" />
+          <h3>سلطان القرشي</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>واجهة التطبيق أنيقة وبديهية. تجعل جدولة المواعيد أمرًا سهلاً!</p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-03.png" alt="" />
+          <h3>شادي نبيل</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            القدرة على رؤية الاتاحة في الوقت الحقيقي وحجز المواعيد على الفور هو
+            تغيير لعبة. لا مزيد من المكالمات الهاتفية أو الانتظار في الانتظار
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-04.png" alt="" />
+          <h3>سعود العتيبي</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+          </div>
+          <p>
+            تطبيق الفلاتر للعثور على الصالون المثالي والخدمة هو ميزة مفيدة
+            للغاية. يجعل من السهل اكتشاف أماكن جديدة!
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-05.png" alt="" />
+          <h3>شريف الزهراني</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            القدرة على إعادة جدولة أو إلغاء المواعيد أثناء التنقل كان رائعًا.
+            لذلك مرنة ومريحة
+          </p>
+        </div>
+        <div class="box">
+          <img src="imgs/avatar-06.png" alt="" />
+          <h3>زين الغامدي</h3>
+          <!-- <span class="title">Full Stack Developer</span> -->
+          <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            تنبيهات التطبيق تُبقيني على اطلاع بالعروض الخاصة والخصومات. أنا لا
+            أفوت أبدًا على صفقة
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- نهاية التوصيات -->
+
+    <!-- بداية التذييل -->
+    <div class="footer">
+      <div class="container">
+        <div class="box">
+          <h3>Adam & Hoah</h3>
+          <ul class="social">
+            <li>
+              <a href="#" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text">
+            تابع معنا! تابع قنوات التواصل الاجتماعي الخاصة بنا للحصول على آخر
+            التحديثات والعروض الحصرية
+          </p>
+        </div>
+        <div class="box">
+          <ul class="links">
+            <!-- <li><a href="#">رابط مهم 1</a></li>
+        <li><a href="#">رابط مهم 2</a></li>
+        <li><a href="#">رابط مهم 3</a></li>
+        <li><a href="#">رابط مهم 4</a></li>
+        <li><a href="#">رابط مهم 5</a></li> -->
+          </ul>
+        </div>
+        <div class="box">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw"></i>
+            <div class="info">
+              المملكة العربية السعودية، جدة، حي مروة، شارع عامر بن ربيعة
+            </div>
+          </div>
+          <div class="line">
+            <i class="far fa-clock fa-fw"></i>
+            <div class="info">
+              ساعات العمل: من الساعة 9:00 صباحًا إلى الساعة 5:00 مساءً
+            </div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw"></i>
+            <div class="info">
+              <span>+966 54 088 7649</span>
+              <span>+966 12 677 501</span>
+            </div>
+          </div>
+        </div>
+        <div class="box footer-gallery">
+          <img src="imgs/salon _category/wemen-2.jpeg" alt="" />
+          <img src="imgs/salon _category/men_salon.jpg" alt="" />
+          <img src="imgs/salon _category/spa.png" alt="" />
+          <img src="imgs/salon _category/massage.jpeg" alt="" />
+          <img src="imgs/salon _category/buity_femal.jpeg" alt="" />
+          <img src="imgs/salon _category/place.png" alt="" />
+        </div>
+      </div>
+      <div class="download-buttons">
+        <a
+          href="https://apps.apple.com/us/app/adam-hoah/id6450120463?platform=iphone"
+          class="button app-store"
+        >
+          <i class="fab fa-apple"></i>App Store
+        </a>
+        <a
+          href="
+    https://play.google.com/store/apps/details?id=com.adamandhoah.adamandhoah&pcampaignid=web_share
+    "
+          class="button google-play"
+        >
+          <i class="fab fa-google-play"></i>Google Play
+        </a>
+      </div>
+      <a href="https://modernzonetech.com"
+        ><h6 class="copyright">© تم إنشاءه بواسطة Modern Zone</h6></a
+      >
+    </div>
+    <!-- نهاية التذييل -->
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
